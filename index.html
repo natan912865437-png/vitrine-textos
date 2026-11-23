@@ -3,75 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vitrine Textos</title>
+  <meta name="description" content="Descrições profissionais para produtos, lojas e catálogos online.">
+  <title>Vitrine Textos | Descrições que ajudam seu produto a se destacar</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #172033;
-    }
-    main {
-      max-width: 760px;
-      min-height: 100vh;
-      margin: auto;
-      padding: 32px 20px;
-      box-sizing: border-box;
-      display: grid;
-      place-items: center;
-    }
-    section {
-      width: 100%;
-      padding: 40px 24px;
-      text-align: center;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      box-sizing: border-box;
-    }
-    h1 { margin-top: 0; }
-    .price {
-      color: #2f6fed;
-      font-size: 30px;
-      font-weight: bold;
-    }
-    ul {
-      max-width: 430px;
-      margin: 24px auto;
-      text-align: left;
-      line-height: 1.8;
-    }
-    a {
-      display: inline-block;
-      padding: 15px 22px;
-      border-radius: 10px;
-      background: #25d366;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-    }
+    :root { --azul:#2f6fed; --verde:#25d366; --escuro:#172033; --claro:#f4f7fb; --cinza:#526079; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,sans-serif; background:var(--claro); color:var(--escuro); line-height:1.6; }
+    main { max-width:860px; margin:auto; padding:32px 20px; }
+    .card { background:#fff; border-radius:18px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,.07); }
+    header { margin:20px 0; text-align:center; }
+    h1 { line-height:1.2; }
+    h2 { margin-top:0; }
+    .intro { color:var(--cinza); font-size:1.1rem; }
+    .pacotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:18px 0; }
+    .pacote { border:1px solid #dde6f3; }
+    .preco { color:var(--azul); font-size:1.55rem; font-weight:700; }
+    .amostra { background:#edf4ff; border-left:4px solid var(--azul); padding:16px; border-radius:8px; }
+    .botao { display:inline-block; padding:14px 20px; border-radius:10px; background:var(--verde); color:#fff; font-weight:bold; text-decoration:none; }
+    .botao:hover, .botao:focus { background:#1daa56; }
+    .centro { text-align:center; }
+    .observacao, footer { color:var(--cinza); font-size:.9rem; }
+    footer { padding:24px 0; text-align:center; }
   </style>
 </head>
 <body>
   <main>
-    <section>
-      <h1>Descrições profissionais para seus produtos</h1>
-      <p>Textos claros e persuasivos, prontos para vender.</p>
-      <p class="price">R$ 80 por 10 descrições</p>
-      <ul>
-        <li>Entrega em até 48 horas</li>
-        <li>Uma revisão gratuita</li>
-        <li>Arquivo organizado em planilha</li>
-        <li>Texto adaptado ao seu público</li>
-      </ul>
-      <a
-        href="https://wa.me/5524999892992?text=Ol%C3%A1!%20Quero%20descri%C3%A7%C3%B5es%20para%20meus%20produtos."
-        target="_blank"
-        rel="noopener"
-      >
-        Pedir pelo WhatsApp
-      </a>
+    <header class="card">
+      <h1>Descrições claras e atrativas para seus produtos</h1>
+      <p class="intro">Textos organizados para catálogos, redes sociais e lojas online.</p>
+      <a class="botao" href="https://wa.me/5524999892992?text=Ol%C3%A1!%20Quero%20uma%20amostra%20gratuita%20de%20descri%C3%A7%C3%A3o%20para%20meu%20produto." target="_blank" rel="noopener">Solicitar amostra gratuita</a>
+    </header>
+
+    <article class="card" style="margin-bottom:18px">
+      <h2>Amostra gratuita</h2>
+      <div class="amostra">
+        <strong>Caneca artesanal de cerâmica</strong><br>
+        Feita à mão e cheia de personalidade, esta caneca de cerâmica acompanha seu café ou chá favorito com estilo. Uma peça especial para o dia a dia ou para presentear.
+      </div>
+      <p class="observacao">Exemplo ilustrativo. Os textos finais serão escritos com as informações do seu produto.</p>
+    </article>
+
+    <h2 class="centro">Pacotes e preços</h2>
+    <section class="pacotes" aria-label="Pacotes">
+      <article class="card pacote">
+        <h3>1 descrição</h3>
+        <p class="preco">R$ 10</p>
+        <p>Texto para um produto, pronto para personalizar no anúncio.</p>
+      </article>
+      <article class="card pacote">
+        <h3>Pacote com 6</h3>
+        <p class="preco">R$ 50</p>
+        <p>Seis descrições organizadas em uma tabela.</p>
+      </article>
+      <article class="card pacote">
+        <h3>Catálogo pequeno</h3>
+        <p class="preco">R$ 100</p>
+        <p>Ideal para até 12 produtos simples. Quantidade maior é avaliada antes.</p>
+      </article>
     </section>
+
+    <article class="card">
+      <h2>Como solicitar</h2>
+      <ol>
+        <li>Envie o nome do produto, características e público desejado.</li>
+        <li>Combine quantidade, prazo e valor pelo WhatsApp.</li>
+        <li>Receba os textos organizados em uma planilha.</li>
+      </ol>
+      <p class="observacao">Uma revisão simples está incluída. A amostra gratuita é limitada a um produto por pessoa.</p>
+      <p class="centro"><a class="botao" href="https://wa.me/5524999892992?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20um%20pacote%20de%20descri%C3%A7%C3%B5es." target="_blank" rel="noopener">Conversar pelo WhatsApp</a></p>
+    </article>
+    <footer>Vitrine Textos · Serviço online</footer>
   </main>
 </body>
 </html>
